@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capturekit"
+version = "0.1.0"
+description = "Screenshot-capture spec runner for project READMEs: plan captures in CAPTURE.md, generate a Windows capture script, wire and verify README references."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Sean Shaffer" },
+]
+keywords = ["screenshots", "readme", "documentation", "windows", "capture"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+capturekit = "capturekit:main"
+
+[tool.setuptools]
+py-modules = ["capturekit"]
